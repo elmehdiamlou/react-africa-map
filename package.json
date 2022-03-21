@@ -1,0 +1,32 @@
+{
+  "name": "react-africa-map",
+  "version": "1.0.0",
+  "description": "dynamic africa map",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elmehdiamlou/react-africa-map.git"
+  },
+  "author": "Elmehdi Amlou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elmehdiamlou/react-africa-map/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.3",
+    "prop-types": "^15.8.1"
+  }
+}
