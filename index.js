@@ -44,7 +44,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var StyledAfricaMap = _styledComponents["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  .africaMap {\n    max-width: ", ";\n    margin: 30px auto;\n  }\n  .africaMap path {\n    cursor: ", ";\n    transition: all 0.5s ease-in-out;\n  }\n  .africaMap *:focus {\n    outline: none !important;\n  }\n  .africaMap text {\n    user-select: none;\n  }\n  .africaMap path:hover {\n    ", "\n  }\n  .place-bottom:after {\n    margin-left: -107px !important;\n    margin-top: -1px !important;\n    border-bottom-color: rgba(243, 240, 231, 0.3) !important;\n  }\n"])), function (p) {
-  return p.size ? p.size === 1 && "300px" || p.size === 2 && "350px" || p.size === 3 && "400px" || "450px" : "450px";
+  return p.size ? p.size === 1 && "300px" || p.size === 2 && "350px" || p.size === 3 && "400px" || p.size === 4 && "450px" || p.size === 5 && "500px" || "450px" : "450px";
 }, function (p) {
   return p.selection ? "pointer" : "initial";
 }, function (p) {
@@ -285,7 +285,7 @@ var AfricaMap = function AfricaMap(props) {
       selection = props.selection,
       selected = props.selected;
 
-  var _useState = (0, _react.useState)(shuffledCountries(animeStartFrom)),
+  var _useState = (0, _react.useState)(shuffledCountries(animeStartFrom || "MA")),
       _useState2 = _slicedToArray(_useState, 1),
       countries = _useState2[0];
 
@@ -313,7 +313,7 @@ var AfricaMap = function AfricaMap(props) {
   }, [selected]);
   (0, _react.useEffect)(function () {
     if (animated || false) {
-      var timeout = animeTime;
+      var timeout = animeTime || 1000;
       var max = countries.length - 1;
       var countryChange = setInterval(function () {
         if (!reverse) setSelectedCountries([].concat(_toConsumableArray(selectedCountries), [countries[countryIndex]]));else {
@@ -985,16 +985,16 @@ var AfricaMap = function AfricaMap(props) {
   }))), (selection || false) && /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("g", null, /*#__PURE__*/_react["default"].createElement("a", null, /*#__PURE__*/_react["default"].createElement("path", {
     d: "M105.62,282.69a.92.92,0,0,1-.42-.1,1,1,0,0,1-.48-1.33,34.66,34.66,0,0,1,2.58-4.46,1,1,0,1,1,1.65,1.11,33,33,0,0,0-2.42,4.2A1,1,0,0,1,105.62,282.69Zm5.53-8.31a1,1,0,0,1-.64-.24,1,1,0,0,1-.12-1.41,45.83,45.83,0,0,1,3.53-3.7,1,1,0,0,1,1.37,1.45,43.58,43.58,0,0,0-3.37,3.55A1,1,0,0,1,111.15,274.38Zm7.29-6.83a1,1,0,0,1-.6-1.8,38.48,38.48,0,0,1,4.33-2.77,1,1,0,1,1,1,1.76,36.57,36.57,0,0,0-4.1,2.61A1,1,0,0,1,118.44,267.55Zm8.77-4.74a1,1,0,0,1-.95-.66,1,1,0,0,1,.61-1.28,30.17,30.17,0,0,1,5-1.3,1,1,0,0,1,.33,2,26.43,26.43,0,0,0-4.66,1.21A1,1,0,0,1,127.21,262.81Zm14.76-1a.71.71,0,0,1-.2,0,26.86,26.86,0,0,0-4.78-.56,1,1,0,0,1,0-2,28,28,0,0,1,5.14.6,1,1,0,0,1-.21,2Z",
     transform: "translate(-0.01 0)",
-    fill: "black"
+    fill: selectColor || 'black'
   })), /*#__PURE__*/_react["default"].createElement("a", null, /*#__PURE__*/_react["default"].createElement("path", {
     d: "M141.47,267.28a1,1,0,0,1-.39-1.92l4.6-1.95a1,1,0,1,1,.78,1.84l-4.6,1.95A.91.91,0,0,1,141.47,267.28Zm7.26-4.65a1,1,0,0,1-.91-.58l-2.11-4.53a1,1,0,0,1,.48-1.33,1,1,0,0,1,1.33.49l2.11,4.53a1,1,0,0,1-.48,1.33A1.06,1.06,0,0,1,148.73,262.63Z",
     transform: "translate(-0.01 0)",
-    fill: "black"
+    fill: selectColor || "black"
   }))), /*#__PURE__*/_react["default"].createElement("text", {
     transform: "translate(36.58 305.95)",
     fontSize: "13",
-    fill: "#000",
-    fontFamily: "Circe, Kanit"
+    fill: selectColor || 'black',
+    fontFamily: "sans-serif"
   }, "Ch", /*#__PURE__*/_react["default"].createElement("tspan", {
     x: "15.27",
     y: "0",
