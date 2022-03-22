@@ -112,15 +112,7 @@ import AfricaMap from 'react-africa-map';
 </tbody>
 </table>
 
-<br>
-
-- **Color Examples** :
-
-  - transparent
-  - #0099ff
-  - rgb(0, 153, 255)
-
-<br>
+- **Color Examples** : transparent, #0099ff, rgb(0, 153, 255)
 
 - **Available countries code** :
 
