@@ -65,7 +65,7 @@ import AfricaMap from 'react-africa-map';
 <td style="text-align:left">String</td>
 <td style="text-align:left"><code>Color</code></td>
 <td style="text-align:left">black</td>
-<td style="text-align:left">Popup selected/hovered country color</td>
+<td style="text-align:left">Popup selected country color</td>
 </tr>
 <tr>
 <td style="text-align:left">selection</td>
