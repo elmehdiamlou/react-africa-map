@@ -112,60 +112,17 @@ import AfricaMap from 'react-africa-map';
 </tbody>
 </table>
 
-- **Color Examples** : transparent, #0099ff, rgb(0, 153, 255)
+- **Color Examples** 
+ 
+```
+transparent, #0099ff, rgb(0, 153, 255)
+```
+ 
+- **Available countries code**
 
-- **Available countries code** :
-
-<table>
-<td>MA</td>
-<td>AO</td>
-<td>BJ</td>
-<td>BW</td>
-<td>BF</td>
-<td>BI</td>
-<td>CM</td>
-<td>CF</td>
-<td>TD</td>
-<td>CG</td>
-<td>CD</td>
-<td>DJ</td>
-<td>EG</td>
-<td>GQ</td>
-<td>ER</td>
-<td>ET</td>
-<td>GA</td>
-<td>GM</td>
-<td>GH</td>
-<td>GN</td>
-<td>GW</td>
-<td>CI</td>
-<td>KE</td>
-<td>LS</td>
-<td>LR</td>
-<td>LY</td>
-<td>MG</td>
-<td>MW</td>
-<td>ML</td>
-<td>MR</td>
-<td>DZ</td>
-<td>MZ</td>
-<td>NA</td>
-<td>NE</td>
-<td>NG</td>
-<td>RW</td>
-<td>SN</td>
-<td>SL</td>
-<td>SO</td>
-<td>ZA</td>
-<td>SD</td>
-<td>SZ</td>
-<td>TZ</td>
-<td>TG</td>
-<td>TN</td>
-<td>UG</td>
-<td>ZM</td>
-<td>ZW</td>
-</table>
+```js
+[ 'MA', 'AO', 'BJ', 'BW', 'BF', 'BI', 'CM', 'CF', 'TD', 'CG', 'CD', 'DJ', 'EG', 'GQ', 'ER', 'ET', 'GA', 'GM', 'GH', 'GN', 'GW', 'CI', 'KE', 'LS', 'LR', 'LY', 'MG', 'MW', 'ML', 'MR', 'DZ', 'MZ', 'NA', 'NE', 'NG', 'RW', 'SN', 'SL', 'SO', 'ZA', 'SD', 'SZ', 'TZ', 'TG', 'TN', 'UG', 'ZM', 'ZW' ]
+```
 
 <br>
 
