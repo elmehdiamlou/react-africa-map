@@ -1292,10 +1292,10 @@ const AfricaMap = (props) => {
                   <tspan x="65.75" y="0">
                     ount
                   </tspan>
-                  <tspan x="92" y="0" letterSpacing="-0.06em">
+                  <tspan x="89.5" y="0" letterSpacing="-0.06em">
                     r
                   </tspan>
-                  <tspan x="97.11" y="0">
+                  <tspan x="95.11" y="0">
                     y
                   </tspan>
                 </text>

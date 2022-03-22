@@ -1015,11 +1015,11 @@ var AfricaMap = function AfricaMap(props) {
     x: "65.75",
     y: "0"
   }, "ount"), /*#__PURE__*/_react["default"].createElement("tspan", {
-    x: "92",
+    x: "89.5",
     y: "0",
     letterSpacing: "-0.06em"
   }, "r"), /*#__PURE__*/_react["default"].createElement("tspan", {
-    x: "97.11",
+    x: "95.11",
     y: "0"
   }, "y")))), /*#__PURE__*/_react["default"].createElement("g", null, animated && selectedCountries.length !== 0 && selectedCountries.slice(1).map(function (v, i) {
     return /*#__PURE__*/_react["default"].createElement("path", {
