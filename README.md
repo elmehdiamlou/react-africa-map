@@ -124,6 +124,11 @@ transparent, #0099ff, rgb(0, 153, 255)
 [ 'MA', 'AO', 'BJ', 'BW', 'BF', 'BI', 'CM', 'CF', 'TD', 'CG', 'CD', 'DJ', 'EG', 'GQ', 'ER', 'ET', 'GA', 'GM', 'GH', 'GN', 'GW', 'CI', 'KE', 'LS', 'LR', 'LY', 'MG', 'MW', 'ML', 'MR', 'DZ', 'MZ', 'NA', 'NE', 'NG', 'RW', 'SN', 'SL', 'SO', 'ZA', 'SD', 'SZ', 'TZ', 'TG', 'TN', 'UG', 'ZM', 'ZW' ]
 ```
 
+- **Examples**
+
+![img](https://user-images.githubusercontent.com/90270530/159593142-e25ea831-ebfd-44bf-b98f-c2dbd49ad6ca.png)
+
+
 <br>
 
 ### 👍 If you liked this repository
