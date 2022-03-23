@@ -65,7 +65,7 @@ import AfricaMap from 'react-africa-map';
 <td style="text-align:left">String</td>
 <td style="text-align:left"><code>Color</code></td>
 <td style="text-align:left">black</td>
-<td style="text-align:left">Popup selected/hovered country color</td>
+<td style="text-align:left">Popup selected country color</td>
 </tr>
 <tr>
 <td style="text-align:left">selection</td>
@@ -123,6 +123,11 @@ transparent, #0099ff, rgb(0, 153, 255)
 ```js
 [ 'MA', 'AO', 'BJ', 'BW', 'BF', 'BI', 'CM', 'CF', 'TD', 'CG', 'CD', 'DJ', 'EG', 'GQ', 'ER', 'ET', 'GA', 'GM', 'GH', 'GN', 'GW', 'CI', 'KE', 'LS', 'LR', 'LY', 'MG', 'MW', 'ML', 'MR', 'DZ', 'MZ', 'NA', 'NE', 'NG', 'RW', 'SN', 'SL', 'SO', 'ZA', 'SD', 'SZ', 'TZ', 'TG', 'TN', 'UG', 'ZM', 'ZW' ]
 ```
+
+- **Examples**
+
+![img](https://user-images.githubusercontent.com/90270530/159593142-e25ea831-ebfd-44bf-b98f-c2dbd49ad6ca.png)
+
 
 <br>
 
