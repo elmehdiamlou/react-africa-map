@@ -25,13 +25,8 @@ const StyledAfricaMap = styled.div`
   .africaMap text {
     user-select: none;
   }
-  .africaMap path:hover {
-    ${(p) => p.selection && "fill: black;"}
-  }
-  .place-bottom:after {
-    margin-left: -107px !important;
-    margin-top: -1px !important;
-    border-bottom-color: rgba(243, 240, 231, 0.3) !important;
+  .africaMap path:not(.animationLines):hover {
+    ${(p) => p.selection && `fill: ${ p.selectColor || 'black'};`}
   }
 `;
 
@@ -1308,6 +1303,7 @@ const AfricaMap = (props) => {
             {animated && selectedCountries.length !== 0 &&
               selectedCountries.slice(1).map((v, i) => (
                 <path
+                  className='animationLines'
                   key={selectedCountries.indexOf(v)}
                   d={`M${findCountry(selectedCountries[0]).x} ${
                     findCountry(selectedCountries[0]).y

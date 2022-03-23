@@ -43,12 +43,12 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var StyledAfricaMap = _styledComponents["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  .africaMap {\n    max-width: ", ";\n    margin: 30px auto;\n  }\n  .africaMap path {\n    cursor: ", ";\n    transition: all 0.5s ease-in-out;\n  }\n  .africaMap *:focus {\n    outline: none !important;\n  }\n  .africaMap text {\n    user-select: none;\n  }\n  .africaMap path:hover {\n    ", "\n  }\n  .place-bottom:after {\n    margin-left: -107px !important;\n    margin-top: -1px !important;\n    border-bottom-color: rgba(243, 240, 231, 0.3) !important;\n  }\n"])), function (p) {
+var StyledAfricaMap = _styledComponents["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  .africaMap {\n    max-width: ", ";\n    margin: 30px auto;\n  }\n  .africaMap path {\n    cursor: ", ";\n    transition: all 0.5s ease-in-out;\n  }\n  .africaMap *:focus {\n    outline: none !important;\n  }\n  .africaMap text {\n    user-select: none;\n  }\n  .africaMap path:not(.animationLines):hover {\n    ", "\n  }\n"])), function (p) {
   return p.size ? p.size === 1 && "300px" || p.size === 2 && "350px" || p.size === 3 && "400px" || p.size === 4 && "450px" || p.size === 5 && "500px" || "450px" : "450px";
 }, function (p) {
   return p.selection ? "pointer" : "initial";
 }, function (p) {
-  return p.selection && "fill: black;";
+  return p.selection && "fill: ".concat(p.selectColor || 'black', ";");
 });
 
 var countries = [{
@@ -1023,6 +1023,7 @@ var AfricaMap = function AfricaMap(props) {
     y: "0"
   }, "y")))), /*#__PURE__*/_react["default"].createElement("g", null, animated && selectedCountries.length !== 0 && selectedCountries.slice(1).map(function (v, i) {
     return /*#__PURE__*/_react["default"].createElement("path", {
+      className: "animationLines",
       key: selectedCountries.indexOf(v),
       d: "M".concat(findCountry(selectedCountries[0]).x, " ").concat(findCountry(selectedCountries[0]).y, " Q").concat(calcCurve(findCountry(selectedCountries[0]).x, findCountry(selectedCountries[0]).y, findCountry(v).x, findCountry(v).y)[0], " ").concat(calcCurve(findCountry(selectedCountries[0]).x, findCountry(selectedCountries[0]).y, findCountry(v).x, findCountry(v).y)[1], " ").concat(findCountry(v).x, " ").concat(findCountry(v).y),
       fill: "transparent",

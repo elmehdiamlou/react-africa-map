@@ -2,6 +2,11 @@
 
 <p align="center"><a href="https://www.npmjs.com/package/react-africa-map" target="_blank"><img src="https://user-images.githubusercontent.com/90270530/159455398-b64ffa08-b6f0-4b22-a3cf-5adb3a0fad8e.png" width="600"></a></p>
 
+<br>
+
+<a href="https://codesandbox.io/s/react-africa-map-izkh37" target="_blank"><img src="https://codesandbox.io/static/img/play-codesandbox.svg" alt="Edit On CodeSandbox" height="41" width="174"></a>
+
+
 ## Installation
 
 ```sh
@@ -65,7 +70,7 @@ import AfricaMap from 'react-africa-map';
 <td style="text-align:left">String</td>
 <td style="text-align:left"><code>Color</code></td>
 <td style="text-align:left">black</td>
-<td style="text-align:left">Popup selected country color</td>
+<td style="text-align:left">Popup selected/hovered country color</td>
 </tr>
 <tr>
 <td style="text-align:left">selection</td>
